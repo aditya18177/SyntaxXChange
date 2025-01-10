@@ -1,0 +1,135 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f0e8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.login-button {
+    background: none;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #ddd;
+}
+
+/* Conversion Container */
+.conversion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 50px 10%;
+    align-items: center;
+}
+
+/* Language Select */
+.language-select {
+    text-align: center;
+}
+
+.language-select img.logo-img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.language-select select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Input and Output Sections */
+.input-section, .output-section {
+    grid-column: span 2;
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.upload-label {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.output-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.output-actions button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+/* Convert Button */
+.convert-btn-container {
+    grid-column: span 2;
+    text-align: center;
+}
+
+#convert-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#convert-button:hover {
+    background-color: #555;
+}

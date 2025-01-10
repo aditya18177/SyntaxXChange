@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Convert Clone</title>
+    <link rel="stylesheet" href="stylemain.css">
+    <script src="scriptmain.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Syntax X Change</div>
+    </header>
+
+    <!-- Main Conversion Section -->
+    <section class="conversion-container">
+        <!-- Input Language -->
+        <div class="language-select">
+            <select id="input-language">
+                <option value="cpp">C++</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="c">C</option>
+                <option value="java">Java</option>
+            </select>
+        </div>
+
+        <!-- Code Input -->
+        <div class="input-section">
+            <label class="upload-label" for="file-input">
+                <b>Click to select</b> or drop your input code file here.
+            </label>
+            <textarea id="code-input" placeholder="Your input code here"></textarea>
+            <input type="file" id="file-input" accept=".txt, .cpp, .py, .js, .java, .c, .pdf, .xlsx">
+        </div>
+
+        <!-- Output Language -->
+        <div class="language-select">
+            <select id="output-language">
+                <option value="python">Python</option>
+                <option value="cpp">C++</option>
+                <option value="javascript">JavaScript</option>
+                <option value="c">C</option>
+                <option value="java">Java</option>
+            </select>
+        </div>
+
+        <!-- Code Output -->
+        <div class="output-section">
+            <textarea id="code-output" placeholder="Converted code will appear here" readonly></textarea>
+            <div class="output-actions">
+                <button id="copy-button">📋</button>
+                <button id="download-button">⬇</button>
+            </div>
+        </div>
+
+        <!-- Convert Button -->
+        <div class="convert-btn-container">
+            <button id="convert-button">Convert</button>
+        </div>
+    </section>
+
+</body>
+</html>
